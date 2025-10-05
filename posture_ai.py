@@ -65,7 +65,7 @@ with mp_pose.Pose(min_detection_confidence=0.5, min_tracking_confidence=0.5) as 
                         cv2.FONT_HERSHEY_SIMPLEX, 1, (255, 255, 255), 2, cv2.LINE_AA)
 
             # Check posture and play alert if slouching
-            if angle < 155 and time.time() - last_alert > ALERT_DELAY:
+            if angle < 171 and time.time() - last_alert > ALERT_DELAY:
                 cv2.putText(image, 'Sit up straight!', (30, 100),
                             cv2.FONT_HERSHEY_SIMPLEX, 1, (0, 0, 255), 3)
                 playsound("alert.mp3")
