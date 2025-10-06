@@ -1,1 +1,1 @@
-pip install mediapipe opencv-python
+pip install mediapipe opencv-python playsound
